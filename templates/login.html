@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block titulo %}Iniciar sesión - Portal de Biblioteca{% endblock %}
+
+{% block contenido %}
+    <h2>Iniciar sesión</h2>
+
+    {% if error %}
+        <p class="mensaje-error">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST" action="{{ url_for('login') }}">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" required>
+
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+
+        <button type="submit">Ingresar</button>
+    </form>
+{% endblock %}
