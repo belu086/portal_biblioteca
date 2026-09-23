@@ -5,15 +5,14 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    background-color: #f4f6f8;
-    color: #222;
+    background-color: #eef3ee;
+    color: #1f2a22;
 }
 
 header {
-    background-color: #ffffff;
-    color: 222;
+    background-color: #1b3a2a;
+    color: #f0f5f0;
     padding: 1rem 2rem;
-    border-bottom: 1px solid #ddd;
 }
 
 header h1 {
@@ -21,7 +20,7 @@ header h1 {
 }
 
 nav a {
-    color: #cfe0f0;
+    color: #b9d9c2;
     margin-right: 1rem;
     text-decoration: none;
     font-weight: 600;
@@ -29,7 +28,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    color: white;
+    color: #ffffff;
 }
 
 main {
@@ -39,12 +38,13 @@ main {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    border-top: 4px solid #1b3a2a;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    color: #777;
+    color: #4c5d4f;
     font-size: 0.85rem;
 }
 
@@ -52,20 +52,26 @@ form label {
     display: block;
     margin-top: 1rem;
     font-weight: 600;
+    color: #1b3a2a;
 }
 
 form input {
     width: 100%;
     padding: 0.5rem;
     margin-top: 0.25rem;
-    border: 1px solid #ccc;
+    border: 1px solid #a8c2ac;
     border-radius: 4px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #1b3a2a;
 }
 
 form button {
     margin-top: 1.5rem;
     padding: 0.6rem 1.2rem;
-    background-color: #1f3a5f;
+    background-color: #1b3a2a;
     color: white;
     border: none;
     border-radius: 4px;
@@ -73,7 +79,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #16304d;
+    background-color: #12281c;
 }
 
 table {
@@ -82,28 +88,41 @@ table {
     margin-top: 1rem;
 }
 
+th {
+    background-color: #e3ede4;
+    color: #1b3a2a;
+}
+
 th, td {
     padding: 0.6rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #d3ded5;
     text-align: left;
 }
 
 .disponible {
-    color: #1a7a3c;
+    color: #1b5e2f;
     font-weight: 600;
 }
 
 .no-disponible {
-    color: #b52121;
+    color: #8c2f2f;
     font-weight: 600;
 }
 
 .mensaje-error {
-    color: #b52121;
+    color: #8c2f2f;
     font-weight: 600;
 }
 
 .mensaje-info {
-    color: #1a7a3c;
+    color: #1b5e2f;
     font-weight: 600;
+}
+
+a {
+    color: #1b5e2f;
+}
+
+a:hover {
+    color: #12281c;
 }
