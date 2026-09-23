@@ -62,4 +62,9 @@ def logout():
     session["mensaje_logout"] = "Sesión cerrada"
     return redirect(url_for("index"))
 
+@app.route("/eliminar_cookie")
+def eliminar_cookie():
+    respuesta = make_response(redirect(url_for("index")))
+    respuesta.delete_cookie("ultimo_usuario")
+    return respuesta
 

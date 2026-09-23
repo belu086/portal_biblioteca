@@ -11,7 +11,12 @@
         <nav>
             <a href="{{ url_for('index') }}">Inicio</a>
             <a href="{{ url_for('libros_view') }}">Libros</a>
-    
+            {% if session.get('usuario') %}
+                <a href="{{ url_for('perfil') }}">Perfil</a>
+                <a href="{{ url_for('logout') }}">Cerrar sesión</a>
+            {% else %}
+                <a href="{{ url_for('login') }}">Iniciar sesión</a>
+            {% endif %}
         </nav>
     </header>
 
@@ -20,7 +25,7 @@
     </main>
 
     <footer>
-        <p>aaaa</p>
+        <p>vidal</p>
     </footer>
 </body>
 </html>
