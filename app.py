@@ -68,3 +68,5 @@ def eliminar_cookie():
     respuesta.delete_cookie("ultimo_usuario")
     return respuesta
 
+if __name__ == "__main__":
+    app.run(debug=True, port=5011)

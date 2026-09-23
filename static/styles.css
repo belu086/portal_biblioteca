@@ -10,9 +10,10 @@ body {
 }
 
 header {
-    background-color: #1f3a5f;
-    color: white;
+    background-color: #ffffff;
+    color: 222;
     padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
 }
 
 header h1 {
@@ -72,7 +73,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #7d8996;
+    background-color: #16304d;
 }
 
 table {
@@ -87,3 +88,22 @@ th, td {
     text-align: left;
 }
 
+.disponible {
+    color: #1a7a3c;
+    font-weight: 600;
+}
+
+.no-disponible {
+    color: #b52121;
+    font-weight: 600;
+}
+
+.mensaje-error {
+    color: #b52121;
+    font-weight: 600;
+}
+
+.mensaje-info {
+    color: #1a7a3c;
+    font-weight: 600;
+}
